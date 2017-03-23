@@ -124,7 +124,10 @@ namespace _7070SIM
                 comm_10100011_deployAnt3();
                 tick();
                 comm_10100100_deployAnt4();
-
+                CountDeploy[0]++;
+                CountDeploy[1]++;
+                CountDeploy[2]++;
+                CountDeploy[3]++;
             }
             return null;
         }
@@ -200,7 +203,19 @@ namespace _7070SIM
         }
         public int comm_10110000_Ant1DepCount()
         {
-
+            return CountDeploy[0];
+        }
+        public int comm_10110001_Ant2DepCount()
+        {
+            return CountDeploy[1];
+        }
+        public int comm_10110010_Ant3DepCount()
+        {
+            return CountDeploy[2];
+        }
+        public int comm_10110011_Ant4DepCount()
+        {
+            return CountDeploy[3];
         }
 
     }
